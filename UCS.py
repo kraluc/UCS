@@ -1,4 +1,32 @@
 #!/usr/bin/env python
+
+# ucs.py
+#
+# 4/13/2021
+#
+# Creates ucs service profiles
+# based on DevNet course material
+# Developing Applications Using Cisco Core
+# Platforms and APIs
+# 10.2 Orchestrating Network and Infrastructure
+
+'''
+usage: UCS.py [-h] [--template TEMPLATE] [--prefix PREFIX] [--count COUNT]
+              username password host
+
+positional arguments:
+  username             username of UCS user
+  password             password of UCS user
+  host                 FQDN or IP of UCS PE host
+
+optional arguments:
+  -h, --help           show this help message and exit
+  --template TEMPLATE  service profile template name
+  --prefix PREFIX      service profile prefix
+  --count COUNT        number of profiles to be created
+'''
+
+
 import argparse
 import http.client
 import xml.etree.ElementTree as ET
